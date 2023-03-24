@@ -1,0 +1,33 @@
+.site-about{
+    max-width: 500px;
+    text-align: center;
+    margin-left: 100px;
+    padding-top: 30px;
+    height: 230px;
+    border-radius: 25px;
+    border: 0.4px solid #0E8388;
+}
+h2 span{
+    color: blueviolet;
+}
+ h2{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    margin-top: 150px;
+    margin-bottom: 10px;
+
+    
+}
+.site-about p{
+    line-height: 30px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+    color: black;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    
+}

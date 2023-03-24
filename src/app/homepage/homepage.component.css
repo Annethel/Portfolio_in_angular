@@ -1,0 +1,27 @@
+.site-intro{
+    width:700px;
+    text-align: center;
+    padding-top: 50px;
+   /* background-image: linear-gradient(rgba(236, 158, 215, 0.7),rgba(157, 248, 250, 0.7)), url(../../assets/images/anna.jpeg);*/
+    border-radius: 30%;
+    margin-left: 40px;
+    margin-top: 50px;
+
+    
+}
+.site-intro h1{
+    padding-top: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.site-intro h2{
+    padding-top: 15px;
+    font-weight: lighter;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.site-intro h3{
+    padding-top: 10px;
+    font-weight: lighter;
+    font-size: 15px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}

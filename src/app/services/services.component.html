@@ -1,0 +1,16 @@
+<div class="site">
+       
+    <h2>Services</h2>
+    
+        <div class="site-service">
+            
+                <div *ngFor = "let item of servicesInfo">
+                   <div class="color">
+                    <h3 #image >{{showServicesDefault ? item.skill : item.alterservice?.imagurl}}</h3>
+                    <img [src]="item.alterservice?.imagurl" alt="" *ngIf = "onClick()">
+                    <p #text>{{showServicesDefault ? item.role : item.alterservice?.altertext }}</p>
+                    <button type="submit" (click)="onClickDetails(item, image, text)" (click) = "onClick()">{{buttonText}}</button>
+                 
+        </div>
+   
+</div>
