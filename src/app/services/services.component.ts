@@ -29,15 +29,15 @@ export class ServicesComponent {
   
    buttonText:string ="Details";
 
-  onClickDetails = (service: Service, image: HTMLHeadingElement, text: HTMLParagraphElement) => {
+  onClickDetails = (service: Service, text: HTMLParagraphElement) => {
   
     if (service.alter) {
-      image.textContent = service.skill;
+      
       text.textContent = service.role
 
       
     } else {
-      image.textContent = service.alterservice?.imagurl ?? ""
+      
       text.textContent = service.alterservice?.altertext ?? ""
     }
     service.alter = !service.alter

@@ -9,8 +9,16 @@
 
     
 }
-.site-intro h1{
+.site-intro h4{
+    color: blueviolet;
+    font-size: 40px;
     padding-top: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.site-intro h1{
+    font-size: 30px;
+    font-weight: 0px;
+    padding-top: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .site-intro h2{

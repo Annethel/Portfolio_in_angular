@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -6,13 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-  contactName:string = "";
-  contactEmail:string ="";
-  contactMessage:string = '';
+  contactForm: FormGroup;
+
+  constructor() {
+    this.contactForm = new FormGroup({
+      name: new FormControl(""),
+      email: new FormControl(""),
+      message: new FormControl("")
+    });
+  }
+
   onclickDone = ()=>{
-    this.contactName = " ";
-    this.contactEmail=" ";
-    this.contactMessage=" ";
+    this.contactForm.reset();
   }
 
 }

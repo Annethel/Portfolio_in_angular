@@ -1,16 +1,13 @@
 
 <div class="contact">
-    <form action="#">
+    <form [formGroup]="contactForm" (submit)="onclickDone()">
        <h3>Name</h3>
-        <input type="text" placeholder="Enter Your Name" [(ngModel)]="contactName">
+        <input type="text" placeholder="Enter Your Name" formControlName="name">
         <h3>Email</h3>
-            <input type="email" placeholder="Enter Your Email" [(ngModel)]="contactEmail">
+        <input type="email" placeholder="Enter Your Email" formControlName="email">
         <h3>Message</h3>
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Leave A Message" [(ngModel)]="contactMessage"></textarea>
-       
-       
-            
-            <div><button type="submit" (click)="onclickDone()">Done</button></div>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Leave A Message" formControlName="message"></textarea>
+        <div><button type="submit">Done</button></div>
         
        
       

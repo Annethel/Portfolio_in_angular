@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ContainerComponent { 
   messageFrom:string ="hello there";
+  iOfService:string = "serviceId"
 
 }
