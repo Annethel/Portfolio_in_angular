@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactComponent } from './contact/contact.component';
 import { ButtonComponent } from './button/button.component';
+import { LayoutModule } from '@angular/cdk/layout';
+
 
 @NgModule({
   declarations: [
@@ -20,13 +22,17 @@ import { ButtonComponent } from './button/button.component';
     AboutComponent,
     ServicesComponent,
     ContactComponent,
-    ButtonComponent
+    ButtonComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    LayoutModule
+    
+    
    
     
   ],

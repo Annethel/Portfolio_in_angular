@@ -34,6 +34,7 @@ export class ServicesComponent {
     if (service.alter) {
       
       text.textContent = service.role
+     
 
       
     } else {
@@ -41,6 +42,7 @@ export class ServicesComponent {
       text.textContent = service.alterservice?.altertext ?? ""
     }
     service.alter = !service.alter
+
   }
   onClick = () =>{
     true;
