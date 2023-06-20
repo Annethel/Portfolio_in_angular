@@ -12,21 +12,14 @@ export class AppComponent implements OnInit {
   title = 'portfolio';
   isPhoneviewed = false;
 
-  constructor(private activatedRoute: ActivatedRoute, public responsive: BreakpointObserver){}
+  constructor(private activatedRoute: ActivatedRoute){}
   ngOnInit(){
      this.activatedRoute.fragment.subscribe((val) => {
       console.log(val);
       this.jumpTo(val ??" ");
      });
 
-     this.responsive.observe([Breakpoints.HandsetPortrait]).subscribe(result =>{
-     this.isPhoneviewed = false;
-
-        if (result.matches) {
-        this.isPhoneviewed = true;
-      } {
-        console.log('HandsetPortrait is on');};
-      });
+    
     }
    
 
